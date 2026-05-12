@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon-efepe.png" type="image/x-icon">
+    <title>EFEPÊ - Marketing & Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-overlay"></div>
+
+    <a href="https://wa.me/5582991638322" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <section id="inicio" class="hero-full">
+        <div class="reveal">
+            <h1 class="hero-main-text">
+                <span class="gradient-text">Transformando</span> marcas de <br>
+                pequenos e médios negócios
+            </h1>
+            <p class="hero-sub-text">Marketing estratégico, branding autêntico e design que comunica.</p>
+            <a href="#sobre" class="cta-home">CONHEÇA A EFEPÊ</a>
+        </div>
+    </section>
+
+    <nav class="nav-cyan">
+        <ul>
+            <li><a href="#inicio">INÍCIO</a></li>
+            <li><a href="#sobre">SOBRE</a></li>
+            <li><a href="#servicos">SERVIÇOS</a></li>
+            <li><a href="#portfolio">PORTFÓLIO</a></li>
+            <li><a href="#planos">PLANOS</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre" class="sobre-container reveal">
+    <h2 class="section-title">Sobre Nós</h2>
+    <div class="title-underline-unified"></div>
+    
+    <!-- Removi a div interna para evitar duplicidade de estilos -->
+    <p class="sobre-slogan">
+        Design que transforma atenção em<br>
+        <span class="gradient-text-light">VALOR PERCEBIDO</span>
+    </p>
+
+    <div class="sobre-grid">
+        <div class="sobre-item">
+            <i class="fa-solid fa-lightbulb sobre-icon-neon"></i>
+            <h4>Diagnóstico de Posicionamento</h4>
+            <p>Posicionamos sua marca para parecer mais valiosa desde o primeiro contato.</p>
+        </div>
+        <div class="sobre-item">
+            <i class="fa-solid fa-pen-nib sobre-icon-neon"></i>
+            <h4>Design</h4>
+            <p>Criamos uma estética estratégica que transmite autoridade e diferencia você da concorrência.</p>
+        </div>
+        <div class="sobre-item">
+            <i class="fa-solid fa-chart-line sobre-icon-neon"></i>
+            <h4>Percepção que Vende</h4>
+            <p>Sua marca passa a gerar mais confiança, mais desejo — e menos objeção ao preço.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="servicos" class="services-section reveal">
+    <h2 class="section-title">Serviços</h2>
+    <div class="title-underline-unified"></div>
+    <div class="services-container">
+        <div class="service-card">
+            <i class="fa-solid fa-chess-pawn servico-icon-neon"></i>
+            <h3>Identidade Estratégica</h3>
+            <p>Marcas com posicionamento claro e aparência consistente.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-bullhorn servico-icon-neon"></i>
+            <h3>Design para Conversão</h3>
+            <p>Design pensado para atrair, engajar e converter.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-layer-group servico-icon-neon"></i>
+            <h3>Materiais de Autoridade</h3>
+            <p>Materiais que reforçam sua credibilidade em cada contato.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="portfolio" class="portfolio-section reveal">
+    <div class="container"> <div class="portfolio-header">
+            <p class="subtitle">PORTFÓLIO</p>
+            <h2 class="title">
+                Design que <span class="text-cyan">conecta,</span><br>
+                estratégia que <span class="text-purple">converte.</span>
+            </h2>
+        </div>
+        
+        <div class="portfolio-filters">
+    <button class="filter-btn active" data-nicho="todos">Todos</button>
+    <button class="filter-btn" data-nicho="saude">SAÚDE & BEM-ESTAR</button>
+    <button class="filter-btn" data-nicho="alimentacao">ALIMENTAÇÃO</button>
+    <button class="filter-btn" data-nicho="estetica">ESTÉTICA</button>
+    <button class="filter-btn" data-nicho="ecommerce">E-COMMERCE</button>
+    <button class="filter-btn" data-nicho="viagens">VIAGENS</button>
+</div>
+
+        <div class="portfolio-grid">
+
+            <!-- CARD: SAÚDE -->
+            <div class="portfolio-item saude large" data-nicho="saude" onclick="abrirGaleria(this)">
+                <img src="imagens/nutri1.webp" alt="Capa Saúde">
+                
+                <div class="lista-interna" style="display: none;">
+                    <img src="imagens/nutri1.webp" loading="lazy"> <!-- A primeira deve ser a capa -->
+                    <img src="imagens/nutri2.webp" loading="lazy">
+                    <img src="imagens/nutri3.webp" loading="lazy">
+                    <img src="imagens/nutri4.webp" loading="lazy">
+                </div>
+
+                <div class="item-overlay">
+                    <span class="tag">SAÚDE & BEM-ESTAR</span>
+                </div>
+            </div>
+
+            <!-- CARD: E-COMMERCE -->
+            <div class="portfolio-item ecommerce" data-nicho="ecommerce" onclick="abrirGaleria(this)">
+                <img src="imagens/fone1.webp" alt="Capa E-commerce">
+                
+                <div class="lista-interna" style="display: none;">
+                    <img src="imagens/fone1.webp" loading="lazy">
+                    <img src="imagens/ps5.webp" loading="lazy">
+                    <img src="imagens/outro-produto.webp" loading="lazy">
+                </div>
+
+                <div class="item-overlay">
+                    <span class="tag">E-COMMERCE</span>
+                </div>
+            </div>
+
+            <!-- CARD: ALIMENTAÇÃO -->
+            <div class="portfolio-item alimentacao" data-nicho="alimentacao" onclick="abrirGaleria(this)">
+                <img src="imagens/cookie.webp" alt="Capa Alimentação">
+                
+                <div class="lista-interna" style="display: none;">
+                    <img src="imagens/cookie.webp" loading="lazy">
+                    <img src="imagens/donut.webp" loading="lazy">
+                    <img src="imagens/bolo.webp" loading="lazy">
+                    <img src="imagens/brownie.webp" loading="lazy">
+                </div>
+
+                <div class="item-overlay">
+                    <span class="tag">ALIMENTAÇÃO</span>
+                </div>
+            </div>
+
+            <!-- CARD: ESTÉTICA -->
+            <div class="portfolio-item estetica" data-nicho="estetica" onclick="abrirGaleria(this)">
+                <img src="imagens/estetica3.webp" alt="Capa Estetica">
+                
+                <div class="lista-interna" style="display: none;">
+                    <img src="imagens/estetica1.webp" loading="lazy">
+                    <img src="imagens/estetica2.webp" loading="lazy">
+                    <img src="imagens/estetica3.webp" loading="lazy">
+                    <img src="imagens/estetica4.webp" loading="lazy">
+                </div>
+
+                <div class="item-overlay">
+                    <span class="tag">ESTÉTICA</span>
+                </div>
+            </div>
+
+            <!-- CARD: VIAGENS -->
+            <div class="portfolio-item viagens" data-nicho="viagens" onclick="abrirGaleria(this)">
+                <img src="imagens/viagem1.webp" alt="Capa Viagens">
+                
+                <div class="lista-interna" style="display: none;">
+                    <img src="imagens/viagem1.webp" loading="lazy">
+                    <img src="imagens/viagem2.webp" loading="lazy">
+                    <img src="imagens/viagem3.webp" loading="lazy">
+                </div>
+
+                <div class="item-overlay">
+                    <span class="tag">VIAGENS</span>
+                </div>
+            </div>
+
+            <!-- Adicione os outros nichos seguindo o mesmo padrão acima -->
+        </div>
+    </div>
+</section>
+
+    <section id="planos" class="planos-section reveal">
+    <h2 class="section-title">Planos</h2>
+    <div class="title-underline-unified"></div>
+
+    <div class="planos-tabs">
+        <button class="tab-btn active" onclick="abrirAba(event, 'identidade-visual')">IDENTIDADE VISUAL</button>
+        <button class="tab-btn" onclick="abrirAba(event, 'midias')">DESIGN DE MÍDIAS</button>
+        <button class="tab-btn" onclick="abrirAba(event, 'diagramacao')">DIAGRAMAÇÃO</button>
+    </div>
+
+    <div id="identidade-visual" class="tab-content active">
+        <div class="planos-grid-fixo">
+            <div class="plano-card-v2">
+                <div class="plano-header-v2" style="color: #cc66ff;">IDV FLASH</div>
+                <div class="alinhamento-visual-pill">Essencial</div>
+                <div class="plano-body">
+                    <div class="plano-row"><span class="row-left">Logo Principal</span><span class="row-right">+ variações preto e branco</span></div>
+                    <div class="plano-row"><span class="row-left">Paleta de Cores</span><span class="row-right">+ instruções de aplicação</span></div>
+                    <div class="plano-row"><span class="row-left">Tipografia</span><span class="row-right">+ instruções de aplicação</span></div>
+                    <div class="plano-row"><span class="row-left">Cartão de Visitas</span><span class="row-right">+ versões digital e impressa</span></div>
+                    <div class="plano-row"><span class="row-left">Aplicações Básicas</span><span class="row-right">Foto de perfil e destaques</span></div>
+                </div>
+                <div class="plano-investimento">
+                    <p>Investimento</p>
+                    <h3>R$ 347,00</h3>
+                    <a href="https://wa.me/5582991638322" class="plano-footer-cta btn-whatsapp-plano">SOLICITAR VIA WHATSAPP</a>
+                </div>
+            </div>
+
+            <div class="plano-card-v2 featured">
+                <span class="badge-destaque">MELHOR ESCOLHA</span> <div class="plano-header-v2" style="color: #00ffff;"></div>
+                <div class="plano-header-v2" style="color: #00ffff;">IDV FLEX</div>
+                <div class="alinhamento-visual-pill" style="border-color: #00ffff;">Intermediário</div>
+                <div class="plano-body">
+                    <div class="plano-row"><span class="row-left">Logo Principal</span><span class="row-right">+ variações P&B</span></div>
+                    <div class="plano-row"><span class="row-left">Paleta de Cores</span><span class="row-right">+ instruções de aplicação</span></div>
+                    <div class="plano-row"><span class="row-left">Tipografia</span><span class="row-right">+ instruções de aplicação</span></div>
+                    <div class="plano-row"><span class="row-left">Mini Manual</span><span class="row-right">+ conjunto de ícones básicos</span></div>
+                </div>
+                <div class="plano-investimento">
+                    <p>Investimento</p>
+                    <h3>R$ 747,00</h3>
+                    <a href="https://wa.me/5582991638322" class="plano-footer-cta btn-whatsapp-plano">SOLICITAR VIA WHATSAPP</a>
+                </div>
+            </div>
+
+            <div class="plano-card-v2">
+                <div class="plano-header-v2" style="color: #cc66ff;">IDV FULL</div>
+                <div class="alinhamento-visual-pill">Pacote Completo</div>
+                <div class="plano-body">
+                    <div class="plano-row"><span class="row-left">Logo Principal</span><span class="row-right">+ variação P&B e perfis temáticos</span></div>
+                    <div class="plano-row"><span class="row-left">Paleta de Cores</span><span class="row-right">+ instruções de aplicação</span></div>
+                    <div class="plano-row"><span class="row-left">Tipografia</span><span class="row-right">+ instruções de aplicação</span></div>
+                    <div class="plano-row"><span class="row-left">Cartão de Visitas</span><span class="row-right">+ versões digital e impressa</span></div>
+                    <div class="plano-row"><span class="row-left">Aplicações Gerais</span><span class="row-right">Redes sociais, marca d'água e uniformes</span></div>
+                    <div class="plano-row"><span class="row-left">Manual da Marca</span><span class="row-right">Guia completo de uso</span></div>
+                </div>
+                <div class="plano-investimento">
+                    <p>Investimento</p>
+                    <h3>R$ 1497,00</h3>
+                    <a href="https://wa.me/5582991638322" class="plano-footer-cta btn-whatsapp-plano">SOLICITAR VIA WHATSAPP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="midias" class="tab-content">
+        <div class="planos-grid-fixo">
+            <div class="plano-card-v2">
+                <div class="plano-header-v2" style="color: #cc66ff;">FLEX</div>
+                <div class="alinhamento-visual-pill" style="border-color: #cc66ff; color: #cc66ff;">Alinhamento Visual</div>
+                <div class="plano-body">
+                    <div class="plano-row"><span class="row-left">4 Posts Estáticos</span><span class="row-right">FEED e STORIES</span></div>
+                    <div class="plano-row"><span class="row-left">1 Post Carrossel</span><span class="row-right">Até 3 páginas</span></div>
+                    <div class="plano-row"><span class="row-left">1 Post Vídeo</span><span class="row-right">Até 30 segundos</span></div>
+                    <div class="plano-row"><span class="row-left">Google Meu Negócio</span><span class="row-right">Gestão e Atualização</span></div>
+                </div>
+                <div class="plano-investimento">
+                    <p>Investimento mensal</p>
+                    <h3>R$ 197,00</h3>
+                    <a href="https://wa.me/5582991638322" class="plano-footer-cta btn-whatsapp-plano">SOLICITAR PLANO</a>
+                </div>
+            </div>
+
+            <div class="plano-card-v2 featured">
+                <span class="badge-destaque">MAIS PEDIDO</span> <div class="plano-header-v2" style="color: #00ffff;"></div>
+                <div class="plano-header-v2" style="color: #00ffff;">ÁTOMO</div>
+                <div class="alinhamento-visual-pill" style="border-color: #00ffff;">Alinhamento Visual</div>
+                <div class="plano-body">
+                    <div class="plano-row"><span class="row-left">8 Posts Estáticos</span><span class="row-right">FEED e STORIES</span></div>
+                    <div class="plano-row"><span class="row-left">2 Posts Carrossel</span><span class="row-right">Até 3 páginas</span></div>
+                    <div class="plano-row"><span class="row-left">2 Posts Vídeo</span><span class="row-right">Até 1 minuto</span></div>
+                    <div class="plano-row"><span class="row-left">Google Meu Negócio</span><span class="row-right">Atualização e Engajamento</span></div>
+                </div>
+                <div class="plano-investimento">
+                    <p>Investimento mensal</p>
+                    <h3>R$ 397,00</h3>
+                    <a href="https://wa.me/5582991638322" class="plano-footer-cta btn-whatsapp-plano">SOLICITAR PLANO</a>
+                </div>
+            </div>
+
+            <div class="plano-card-v2">
+                <div class="plano-header-v2" style="color: #cc66ff;">ERÍDION</div>
+                <div class="alinhamento-visual-pill eridion-pill">Alinhamento Visual</div>
+                <div class="plano-body">
+                    <div class="plano-row"><span class="row-left">20 Posts Estáticos</span><span class="row-right">FEED e STORIES</span></div>
+                    <div class="plano-row"><span class="row-left">3 Posts Carrossel</span><span class="row-right">Até 3 páginas</span></div>
+                    <div class="plano-row"><span class="row-left">3 Posts Vídeo</span><span class="row-right">Até 1 minuto</span></div>
+                    <div class="plano-row"><span class="row-left">Google Meu Negócio</span><span class="row-right">Atualização e Engajamento</span></div>
+                </div>
+                <div class="plano-investimento">
+                    <p>Investimento mensal</p>
+                    <h3>R$ 997,00</h3>
+                    <a href="https://wa.me/5582991638322" class="plano-footer-cta btn-whatsapp-plano">SOLICITAR PLANO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="diagramacao" class="tab-content">
+        <div class="planos-grid-fixo">
+            <div class="plano-card-v2">
+                <div class="plano-header-v2" style="color: #cc66ff;">DG EXPRESS</div>
+                <div class="alinhamento-visual-pill">Material Rico</div>
+                <div class="plano-body">
+                    <div class="plano-row"><span class="row-left">E-books</span><span class="row-right">Até 15 páginas focadas em leads</span></div>
+                    <div class="plano-row"><span class="row-left">Capa Impactante</span><span class="row-right">+ Sumário e links clicáveis</span></div>
+                    <div class="plano-row"><span class="row-left">Leitura Fluida</span><span class="row-right">Design otimizado para telas</span></div>
+                    <div class="plano-row"><span class="row-left">PDF Interativo</span><span class="row-right">Pronto para distribuição digital</span></div>
+                </div>
+                <div class="plano-investimento">
+                    <p>Investimento</p>
+                    <h3>R$ 497,00</h3>
+                    <a href="https://wa.me/5582991638322" class="plano-footer-cta btn-whatsapp-plano">SOLICITAR VIA WHATSAPP</a>
+                </div>
+            </div>
+
+            <div class="plano-card-v2 featured">
+                <span class="badge-destaque">RECOMENDADO</span> <div class="plano-header-v2" style="color: #00ffff;"></div>
+                <div class="plano-header-v2" style="color: #00ffff;">DG BUSINESS</div>
+                <div class="alinhamento-visual-pill" style="border-color: #00ffff;">Foco em Conversão</div>
+                <div class="plano-body">
+                    <div class="plano-row"><span class="row-left">Apresentações</span><span class="row-right">Comerciais e propostas de valor</span></div>
+                    <div class="plano-row"><span class="row-left">Até 25 Slides</span><span class="row-right">Storytelling e narrativa visual</span></div>
+                    <div class="plano-row"><span class="row-left">Infográficos</span><span class="row-right">Gráficos e tabelas personalizadas</span></div>
+                    <div class="plano-row"><span class="row-left">Catálogos</span><span class="row-right">Otimizados para vendas e pedidos</span></div>
+                </div>
+                <div class="plano-investimento">
+                    <p>Investimento</p>
+                    <h3>R$ 897,00</h3>
+                    <a href="https://wa.me/5582991638322" class="plano-footer-cta btn-whatsapp-plano">SOLICITAR VIA WHATSAPP</a>
+                </div>
+            </div>
+
+            <div class="plano-card-v2">
+                <div class="plano-header-v2" style="color: #cc66ff;">DG PREMIUM</div>
+                <div class="alinhamento-visual-pill">Autoridade Máxima</div>
+                <div class="plano-body">
+                    <div class="plano-row"><span class="row-left">Revistas Digitais</span><span class="row-right">Materiais editoriais complexos</span></div>
+                    <div class="plano-row"><span class="row-left">Tratamento</span><span class="row-right">Curadoria e edição de imagens</span></div>
+                    <div class="plano-row"><span class="row-left">Fechamento</span><span class="row-right">Arquivo pronto para gráfica</span></div>
+                    <div class="plano-row"><span class="row-left">Projetos Grandes</span><span class="row-right">Relatórios e informativos extensos</span></div>
+                </div>
+                <div class="plano-investimento">
+                    <p>Investimento</p>
+                    <h3>Sob Consulta</h3>
+                    <a href="https://wa.me/5582991638322" class="plano-footer-cta btn-whatsapp-plano">SOLICITAR ORÇAMENTO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#planos">Planos</a>
+        </div>
+
+       <div class="footer-social">
+    <a href="https://www.instagram.com/efepemkt/" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <a href="https://www.behance.net/efepmarketing" target="_blank" title="Behance">
+        <i class="fab fa-behance"></i>
+    </a>
+    
+    <a href="https://wa.me/5582991638322" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+
+        <div class="footer-copy">
+            <p>&copy; 2026 Efepe Design. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- LIGHTBOX ATUALIZADO -->
+<div id="lightbox" class="lightbox">
+    <span class="fechar-lightbox">&times;</span>
+    
+    <!-- Novo: Onde aparecerá o contador 1 / 4 -->
+    <div id="contador-lightbox"></div> 
+
+    <!-- Removido o onclick para usar a lógica do script.js -->
+    <button class="seta anterior">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Zoom do Projeto">
+    <button class="seta proxima">&#10095;</button>
+</div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
