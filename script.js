@@ -7,6 +7,8 @@ const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 let touchstartX = 0;
 let touchendX = 0;
+let touchstartY = 0;
+let touchendY = 0;
 
 // ================================================================
 // 2. FUNÇÃO PARA AS ABAS (PLANOS)
@@ -132,24 +134,36 @@ lightbox.addEventListener('click', (e) => {
     if (e.target.id === 'lightbox') fecharGaleria();
 });
 
-// Lógica de Deslizar (Swipe) para Celular
+// Lógica de Deslizar (Swipe) Otimizada para Celular (Sem conflito de rolagem vertical)
 lightbox.addEventListener('touchstart', e => {
     touchstartX = e.changedTouches[0].screenX;
+    touchstartY = e.changedTouches[0].screenY;
 }, {passive: true});
 
 lightbox.addEventListener('touchend', e => {
     touchendX = e.changedTouches[0].screenX;
+    touchendY = e.changedTouches[0].screenY;
     handleGesture();
 }, {passive: true});
 
 function handleGesture() {
-    if (touchendX < touchstartX - 50) proximaImagem();
-    if (touchendX > touchstartX + 50) imagemAnterior();
+    const diferencaX = touchendX - touchstartX;
+    const diferencaY = touchendY - touchstartY;
+
+    // Só detecta o swipe se o movimento horizontal for maior que o vertical
+    // Isso impede que a tentativa de arrastar a tela para cima/baixo mude de imagem acidentalmente
+    if (Math.abs(diferencaX) > Math.abs(diferencaY)) {
+        if (diferencaX < -60) {
+            proximaImagem(); // Deslizou para a esquerda
+        } else if (diferencaX > 60) {
+            imagemAnterior(); // Deslizou para a direita
+        }
+    }
 }
 
 // ================================================================
 // 5. WHATSAPP E MENU SCROLL (VERSÃO CORRIGIDA)
-// ================================================
+// ================================================================
 document.querySelectorAll('.btn-whatsapp-plano').forEach(botao => {
     botao.addEventListener('click', function(e) {
         e.preventDefault();
@@ -178,7 +192,6 @@ window.addEventListener('scroll', () => {
 
     navLinks.forEach(link => {
         link.classList.remove('active');
-        // Adicionamos uma verificação: só ativa se o link começar com #
         const href = link.getAttribute('href');
         if (current && href && href.includes(`#${current}`)) {
             link.classList.add('active');
